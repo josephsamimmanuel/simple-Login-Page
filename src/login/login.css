@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E7E3E2;
+}
+.login-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.login-section-left{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    height: 30vh;
+    width: 30vw;
+}
+.login-section-title{
+    display: flex;
+    flex-direction: column;
+}
+.login-section-title-intro{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.login-section-title-input{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.login-section-title-input input{
+    border: 2px solid #D3D9D7;
+    height: 2.5em;
+    width: 30em;
+    border-radius: 5px;
+}
+.login-section-title-input button{
+    border: none;
+    height: 2.5em;
+    width: 30em;
+    background-color: #FF6B15;
+    color: white;
+    border-radius: 5px;
+}
+.login-section-title-input button:hover{
+    cursor: pointer;
+}
+.login-section-title-input input:focus{
+    outline: none;
+}
+.login-section-right{
+    width: 500px;
+    height: 526px;
+    border: 2px solid transparent;
+    overflow: hidden;
+}
+.login-section-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* <<<< ==================================================== >>>> */
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .login-section-left{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        padding-left: 4em;
+        padding-right: 4em;
+        padding-bottom: 10em;
+        height: 16vh;
+        width: 80vw;
+    }
+    .login-section-title-input{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .login-section-right{
+        width: 740px;
+        height: 526px;
+        border: 2px solid transparent;
+        overflow: hidden;
+    }
+    .login-section-right img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
