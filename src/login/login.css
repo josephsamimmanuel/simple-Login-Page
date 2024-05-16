@@ -21,7 +21,6 @@
 }
 .login-section-left{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     height: fit-content;
     width: fit-content;
@@ -49,10 +48,24 @@
     gap: 2em;
 }
 .login-section-title-input input{
-    border: 2px solid #D3D9D7;
+    border: 2px solid transparent;
     height: 2.5em;
     width: 30em;
     border-radius: 5px;
+}
+.input-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #D3D9D7;
+    height: 2.5em;
+    width: 25em;
+    border-radius: 5px;
+    color: #FF6B15;
+}
+.input-icon i{
+    padding-left: 10px;
 }
 .login-section-title-input button{
     border: none;

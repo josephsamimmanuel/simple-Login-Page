@@ -8,7 +8,7 @@ function Login() {
     const [errorMessage, setErrorMessage] = useState('');
 
     const loginForm = () => {
-        setErrorMessage('');
+        setErrorMessage('');                                            // Error message left empty for first time
 
         if (username === '' || password === '') {                       // Left Empty
             setErrorMessage('All fields are required.');
@@ -34,11 +34,17 @@ function Login() {
                             <span>order effortlessly</span>
                         </div>
                         <div className='login-section-title-input'>
-                            <input type="text" placeholder='Email Address' value={username} onChange={(event) => setUsername(event.target.value)} />
+                            <div className='input-icon'>
+                            <i class="fa-solid fa-envelope"></i>
+                                <input type="text" placeholder='Email Address' value={username} onChange={(event) => setUsername(event.target.value)} />
+                            </div>
+                            <div className='input-icon'>
+                            <i class="fa-solid fa-lock"></i>
                             <input type="text" placeholder='Password' value={password} onChange={(event) => setPassword(event.target.value)} />
+                            </div>
                             <button onClick={loginForm}>Login</button>
                         </div>
-                        {errorMessage && <div id='error-message'>{errorMessage}</div>}
+                        {errorMessage && <div id='error-message'>{errorMessage}</div>} {/*  error message and error message happens, prints the Seterror message */}
                     </div>
                 </div>
 
