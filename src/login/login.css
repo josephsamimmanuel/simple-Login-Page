@@ -111,6 +111,23 @@
         height: 16vh;
         width: 80vw;
     }
+    .login-section-title-input input{
+        border: 2px solid transparent;
+        height: 2.5em;
+        width: 30em;
+        border-radius: 5px;
+    }
+    .input-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid #D3D9D7;
+        height: 2.5em;
+        width: 24.5em;
+        border-radius: 5px;
+        color: #FF6B15;
+    }
     .login-section-title-input{
         display: flex;
         flex-direction: column;
